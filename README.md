@@ -33,7 +33,7 @@ Browser: Zen Browser (firefox-based)
 	
 	Moreover, i accidentally once managed to get a combo of 4 successfull jumps in a row, that made me bang player head into the ceiling (room is 4m tall). But cannot replicate that case
 	
-	I have no idea, what happens under the hood. But most probable cause, IMHO, is that player after falling gets clipped into the floor a tiny amount. And it takes player a single tick longer to move from out of floor. And in that single tick game makes second "jump", by accelerates player again.
+	I have no idea, what happens under the hood. But most probable cause, IMHO, is that player after falling gets clipped into the floor a tiny amount. And it takes player a single tick longer to move out of a floor. And in that single tick game makes second "jump", by accelerates player again.
 
 - Camera prop falling OOB crashes the game. This is really easy to do accidentally.
 
