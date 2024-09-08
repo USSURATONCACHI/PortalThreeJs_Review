@@ -10,6 +10,7 @@ I tried to switch it to use Nvidia RTX 3050, but failed in that task.
 
 RAM: 16 GiB
 
+Browser: Zen Browser (firefox-based)
 
 
 ## General
