@@ -15,7 +15,9 @@ Browser: Zen Browser (firefox-based)
 
 ## General
 
-- On firefox-based browsers there is a hotkey "Ctrl + W" that immideately closes the tab. At first i though that game crashes on crouch, but no. I wonder if the tab could override this hotkey.
+- On firefox-based browsers there is a hotkey "Ctrl + W" that immideately closes the tab. At first i though that game crashes on crouch, but no. I wonder if a browser tab could override this hotkey.
+
+- Also, "Ctrl + S" and "Ctrl + D" are also hotkeys that unfocus the game when pressed.
 
 - By repeatedly jumping on the radio you evenually push it through the floor.
 
@@ -72,7 +74,7 @@ Browser: Zen Browser (firefox-based)
 - Model of the portal extends behind the portal.
 	https://youtu.be/yjU2s5nUD2U
 
-- Anti-expropriation field, betweel room 2 and room 3 does not destroy cameras. Probably cubes too, but i did not test.
+- Anti-expropriation field betweel room 2 and room 3 does not destroy cameras. Probably cubes too, but i did not test.
 
 ### Room 3
 
@@ -81,7 +83,7 @@ Browser: Zen Browser (firefox-based)
 - Wire floats in the air.
 	![Wire floats in the air](./images/wire_floats.png)
 
-- Clicking, while looking at the anti-expropriation field crashes the game (even if you click through the closed door).
+- Clicking, while looking at the exit anti-expropriation field, crashes the game (even if you click through the closed door).
 
 ```
 Uncaught TypeError: Qv.PORTALS[e].hostObjects is null
@@ -91,7 +93,7 @@ Uncaught TypeError: Qv.PORTALS[e].hostObjects is null
     hM https://sea-lion-app-thyvo.ondigitalocean.app/static/js/main.799bc210.js:1028
 ```
 
-- When there is no orange portal for whatever reason, you can place blue portal on the ceiling right above anti-expropriation field. That removes ceiling collision in that place. By then propflying with camera into the ceiling you get above the ceiling level. By then flying through the field with camera you remove blue portal and return collision. This lets you get out of bounds and then propfly to wherever.
+- When there is no orange portal for whatever reason, you can place blue portal on the ceiling, right above anti-expropriation field. There is a checkerboard pattern tile there. Portal (even with no exit) removes ceiling collision in that place. Then prop-fly above the ceiling. Now flying through the field with camera you remove the blue portal and return collision. This lets you get out of bounds and then prop-fly to wherever.
 
 	![OOB](./images/oob.png)
 
