@@ -154,6 +154,3 @@ Uncaught TypeError: Qv.PORTALS[e].hostObjects is null
 - You can just grab a cube directly from dispenser. But it will have no gravily applied: https://youtu.be/KlCfBDzAf9s
 
 
-### Room 3
-
--
